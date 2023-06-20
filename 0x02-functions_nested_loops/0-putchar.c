@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * main - print _putchare
+ * Return: means success
+ */
 int main(void)
 {
 	char hacker[] = "_putchar";
