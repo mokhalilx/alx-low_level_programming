@@ -1,0 +1,120 @@
+/* _putchar.c */
+
+int _putchar(char c) {
+    /* Implementation of _putchar */
+}
+
+/* _islower.c */
+
+int _islower(int c) {
+    /* Implementation of _islower */
+}
+
+/* _isalpha.c */
+
+int _isalpha(int c) {
+    /* Implementation of _isalpha */
+}
+
+/* _abs.c */
+
+int _abs(int n) {
+    /* Implementation of _abs */
+}
+
+/* _isupper.c */
+
+int _isupper(int c) {
+    /* Implementation of _isupper */
+}
+
+/* _isdigit.c */
+
+int _isdigit(int c) {
+    /* Implementation of _isdigit */
+}
+
+/* _strlen.c */
+
+int _strlen(char *s) {
+    /* Implementation of _strlen */
+}
+
+/* _puts.c */
+
+void _puts(char *s) {
+    /* Implementation of _puts */
+}
+
+/* _strcpy.c */
+
+char *_strcpy(char *dest, char *src) {
+    /* Implementation of _strcpy */
+}
+
+/* _atoi.c */
+
+int _atoi(char *s) {
+    /* Implementation of _atoi */
+}
+
+/* _strcat.c */
+
+char *_strcat(char *dest, char *src) {
+    /* Implementation of _strcat */
+}
+
+/* _strncat.c */
+
+char *_strncat(char *dest, char *src, int n) {
+    /* Implementation of _strncat */
+}
+
+/* _strncpy.c */
+
+char *_strncpy(char *dest, char *src, int n) {
+    /* Implementation of _strncpy */
+}
+
+/* _strcmp.c */
+
+int _strcmp(char *s1, char *s2) {
+    /* Implementation of _strcmp */
+}
+
+/* _memset.c */
+
+char *_memset(char *s, char b, unsigned int n) {
+    /* Implementation of _memset */
+}
+
+/* _memcpy.c */
+
+char *_memcpy(char *dest, char *src, unsigned int n) {
+    /* Implementation of _memcpy */
+}
+
+/* _strchr.c */
+
+char *_strchr(char *s, char c) {
+    /* Implementation of _strchr */
+}
+
+/* _strspn.c */
+
+unsigned int _strspn(char *s, char *accept) {
+    /* Implementation of _strspn */
+}
+
+/* _strpbrk.c */
+
+char *_strpbrk(char *s, char *accept) {
+    /* Implementation of _strpbrk */
+}
+
+/* _strstr.c */
+
+char *_strstr(char *haystack, char *needle) {
+    /* Implementation of _strstr */
+}
+
