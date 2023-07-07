@@ -1,120 +1,140 @@
-/* _putchar.c */
+#include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(char c) {
-    /* Implementation of _putchar */
+  putchar(c);
+  return 0;
 }
-
-/* _islower.c */
 
 int _islower(int c) {
-    /* Implementation of _islower */
+  return (c >= 'a' && c <= 'z');
 }
-
-/* _isalpha.c */
 
 int _isalpha(int c) {
-    /* Implementation of _isalpha */
+  return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
 }
-
-/* _abs.c */
 
 int _abs(int n) {
-    /* Implementation of _abs */
+  return n < 0 ? -n : n;
 }
-
-/* _isupper.c */
 
 int _isupper(int c) {
-    /* Implementation of _isupper */
+  return (c >= 'A' && c <= 'Z');
 }
-
-/* _isdigit.c */
 
 int _isdigit(int c) {
-    /* Implementation of _isdigit */
+  return (c >= '0' && c <= '9');
 }
-
-/* _strlen.c */
 
 int _strlen(char *s) {
-    /* Implementation of _strlen */
+  int len = 0;
+  while (*s != '\0') {
+    len++;
+    s++;
+  }
+  return len;
 }
-
-/* _puts.c */
 
 void _puts(char *s) {
-    /* Implementation of _puts */
+  while (*s != '\0') {
+    putchar(*s);
+    s++;
+  }
 }
-
-/* _strcpy.c */
 
 char *_strcpy(char *dest, char *src) {
-    /* Implementation of _strcpy */
+  char *p = dest;
+  while (*src != '\0') {
+    *p = *src;
+    p++;
+    src++;
+  }
+  *p = '\0';
+  return dest;
 }
-
-/* _atoi.c */
 
 int _atoi(char *s) {
-    /* Implementation of _atoi */
+  int n = 0;
+  int sign = 1;
+  if (*s == '-') {
+    sign = -1;
+    s++;
+  }
+  while (*s != '\0' && *s >= '0' && *s <= '9') {
+    n = n * 10 + (*s - '0');
+    s++;
+  }
+  return n * sign;
 }
-
-/* _strcat.c */
 
 char *_strcat(char *dest, char *src) {
-    /* Implementation of _strcat */
+  char *p = dest;
+  while (*p != '\0') {
+    p++;
+  }
+  while (*src != '\0') {
+    *p = *src;
+    p++;
+    src++;
+  }
+  *p = '\0';
+  return dest;
 }
-
-/* _strncat.c */
 
 char *_strncat(char *dest, char *src, int n) {
-    /* Implementation of _strncat */
+  char *p = dest;
+  while (*p != '\0') {
+    p++;
+  }
+  for (int i = 0; i < n; i++) {
+    if (*src == '\0') {
+      break;
+    }
+    *p = *src;
+    p++;
+    src++;
+  }
+  *p = '\0';
+  return dest;
 }
-
-/* _strncpy.c */
 
 char *_strncpy(char *dest, char *src, int n) {
-    /* Implementation of _strncpy */
+  char *p = dest;
+  for (int i = 0; i < n; i++) {
+    if (*src == '\0') {
+      break;
+    }
+    *p = *src;
+    p++;
+    src++;
+  }
+  *p = '\0';
+  return dest;
 }
-
-/* _strcmp.c */
 
 int _strcmp(char *s1, char *s2) {
-    /* Implementation of _strcmp */
+  while (*s1 != '\0' && *s2 != '\0') {
+    if (*s1 != *s2) {
+      return *s1 - *s2;
+    }
+    s1++;
+    s2++;
+  }
+  return *s1 - *s2;
 }
-
-/* _memset.c */
 
 char *_memset(char *s, char b, unsigned int n) {
-    /* Implementation of _memset */
+  for (unsigned int i = 0; i < n; i++) {
+    *s = b;
+    s++;
+  }
+  return s;
 }
-
-/* _memcpy.c */
 
 char *_memcpy(char *dest, char *src, unsigned int n) {
-    /* Implementation of _memcpy */
-}
-
-/* _strchr.c */
-
-char *_strchr(char *s, char c) {
-    /* Implementation of _strchr */
-}
-
-/* _strspn.c */
-
-unsigned int _strspn(char *s, char *accept) {
-    /* Implementation of _strspn */
-}
-
-/* _strpbrk.c */
-
-char *_strpbrk(char *s, char *accept) {
-    /* Implementation of _strpbrk */
-}
-
-/* _strstr.c */
-
-char *_strstr(char *haystack, char *needle) {
-    /* Implementation of _strstr */
-}
+  for (unsigned int i = 0; i < n; i++) {
+    *dest = *src;
+    dest++;
+    src++;
+ 
 
